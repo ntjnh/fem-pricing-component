@@ -28,20 +28,19 @@ function App() {
 
     return (
         <>
-            <div>
-                <h2>Our Pricing</h2>
+            <div className="pricing">
+                <h2 className="pricing__title">Our Pricing</h2>
 
-                <div>
-                    <p>Annually</p>
-                    <button className="price-toggle" type="button" onClick={handleClick}>toggle</button>
-                    <p>Monthly</p>
+                <div className="pricing-toggle">
+                    <p className="pricing-toggle__label">Annually</p>
+                    <button className="pricing-toggle__btn" type="button" onClick={handleClick}>toggle</button>
+                    <p className="pricing-toggle__label">Monthly</p>
                 </div>
 
                 {plans}
             </div>
 
             <Attr />
-            
         </>
     )
 }
