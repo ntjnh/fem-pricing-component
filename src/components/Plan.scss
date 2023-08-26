@@ -21,6 +21,12 @@
             &__button {
                 background: $white;
                 color: $gradient-dark;
+
+                &:hover {
+                    background: transparent;
+                    border-color: $white;
+                    color: $white;
+                }
             }
 
             &__features li {
@@ -73,14 +79,24 @@
 
     &__button {
         background: linear-gradient(to right, $gradient-light, $gradient-dark);
+        border: 1px solid transparent;
         border-radius: .4rem;
         color: $white;
+        cursor: pointer;
         display: inline-block;
         font-size: 13px;
         letter-spacing: .1em;
         line-height: 1;
         padding: 1rem 0;
+        position: relative;
         text-transform: uppercase;
+        transition: all .2s ease-in-out;
         width: 100%;
+
+        &:hover {
+            background: transparent;
+            border: 1px solid $gray-blue;
+            color: $gradient-dark;
+        }
     }
 }
