@@ -28,6 +28,33 @@ body {
         right: -10rem;
         top: -2.5rem;
         width: 100%;
+
+        @media (min-width: 640px) {
+            right: -21rem;
+        }
+
+        @media (min-width: 1024px) {
+            height: 660px;
+            right: 0;
+            top: 0;
+            width: 376px;
+        }
+    }
+    
+    @media (min-width: 1024px) {
+        padding: 4.5rem 1.25rem;
+
+        &::after {
+            background: url('../images/bg-bottom.svg') center no-repeat;
+            background-size: contain;
+            content: '';
+            display: inline-block;
+            position: absolute;
+            height: 306px;
+            left: 0;
+            bottom: 0;
+            width: 355px;
+        }
     }
 
     &__title {
@@ -46,6 +73,10 @@ body {
         padding: 2.5rem 0 5rem;
         position: relative;
         z-index: 2;
+
+        @media (min-width: 1024px) {
+            padding-bottom: 4rem;
+        }
 
         &__label {
             color: $gray-blue-light;
@@ -88,5 +119,14 @@ body {
                 }
             }
         }
+    }
+}
+
+.plans {
+    @media (min-width: 1024px) {
+        align-items: center;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
     }
 }
