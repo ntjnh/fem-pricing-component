@@ -1,3 +1,22 @@
+@import "../assets/scss/vars";
+
 .attribution {
+    background-color: $gray-blue-dark;
+    color: $white;
     font-weight: 400;
+    text-align: center;
+    
+    & > div {
+        margin: 0 auto;
+        padding: 1.5rem 0;
+    }
+    
+    a {
+        color: $gradient-light;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
