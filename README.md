@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Solution Screenshot](./screenshot.png)
+![Solution Screenshot](./challenge-screenshot.png)
 
 ### Links
 
