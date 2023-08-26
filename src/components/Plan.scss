@@ -3,13 +3,40 @@
 .plan {
     background-color: $white;
     border-radius: .5rem;
-    margin-bottom: 2rem;
+    box-shadow: 0 0 12px 2px rgba($gray-blue-light, .2);
+    margin: 0 auto 2rem;
     padding: 2rem 1.5rem;
     position: relative;
+    width: 100%;
     z-index: 2;
+
+    @media (min-width: 640px) {
+        max-width: 560px;
+    }
+
+    @media (min-width: 1024px) {
+        margin: 0;
+        max-width: 350px;
+        padding: 2rem;
+
+        &:first-child {
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+        &:nth-child(3)  {
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+        }
+    }
 
     &--bestseller {
         background: linear-gradient(to bottom, $gradient-light, $gradient-dark);
+
+        @media (min-width: 1024px) {
+            padding: 3.5rem 1.5rem;
+            z-index: 3;
+        }
         
         .plan {
             &__name,

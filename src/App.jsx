@@ -29,7 +29,7 @@ function App() {
 
     return (
         <>
-            <div className="pricing">
+            <main className="pricing">
                 <h2 className="pricing__title">Our Pricing</h2>
 
                 <div className="pricing-toggle">
@@ -38,8 +38,8 @@ function App() {
                     <p className="pricing-toggle__label">Monthly</p>
                 </div>
 
-                {plans}
-            </div>
+                <div className="plans">{plans}</div>
+            </main>
 
             <Attr />
         </>
