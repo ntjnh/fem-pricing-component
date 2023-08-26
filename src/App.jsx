@@ -34,7 +34,7 @@ function App() {
 
                 <div className="pricing-toggle">
                     <p className="pricing-toggle__label">Annually</p>
-                    <button className="pricing-toggle__btn" type="button" onClick={handleClick}>toggle</button>
+                    <button className={`pricing-toggle__btn ${billingFrequency}`} type="button" onClick={handleClick}></button>
                     <p className="pricing-toggle__label">Monthly</p>
                 </div>
 

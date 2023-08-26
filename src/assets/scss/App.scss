@@ -39,6 +39,10 @@ body {
     }
 
     &-toggle {
+        align-items: center;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
         padding: 2.5rem 0 5rem;
         position: relative;
         z-index: 2;
@@ -47,6 +51,42 @@ body {
             color: $gray-blue-light;
             display: inline-block;
             margin: 0;
+        }
+
+        &__btn {
+            background: linear-gradient(to right, $gradient-light, $gradient-dark);
+            border: none;
+            border-radius: 1rem;
+            cursor: pointer;
+            height: 2rem;
+            margin: 0 1.5rem;
+            position: relative;
+            width: 3.5rem;
+
+            &:after {
+                background-color: $white;
+                border-radius: 50%;
+                content: "";
+                display: inline-block;
+                height: 1.5rem;
+                position: absolute;
+                right: 4px;
+                top: 4px;
+                transition: transform 75ms linear;
+                width: 1.5rem;
+            }
+
+            &.monthly {
+                &:after {
+                    transform: translateX(0);
+                }
+            }
+
+            &.annually {
+                &:after {
+                    transform: translateX(-23px);
+                }
+            }
         }
     }
 }
