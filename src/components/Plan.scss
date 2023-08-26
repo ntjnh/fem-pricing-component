@@ -8,6 +8,31 @@
     position: relative;
     z-index: 2;
 
+    &--bestseller {
+        background: linear-gradient(to bottom, $gradient-light, $gradient-dark);
+        
+        .plan {
+            &__name,
+            &__price,
+            &__features li {
+                color: $white;
+            }
+
+            &__button {
+                background: $white;
+                color: $gradient-dark;
+            }
+
+            &__features li {
+                border-bottom-color: $gradient-light;
+
+                &:first-child {
+                    border-top-color: $gradient-light;
+                }
+            }
+        }
+    }
+
     &__name {
         color: $gray-blue;
         font-size: 1.125rem;

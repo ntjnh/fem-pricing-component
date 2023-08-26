@@ -14,6 +14,7 @@ function App() {
                 plan={plan.plan} 
                 price={plan.prices[billingFrequency]} 
                 features={plan.features}
+                bestseller={i === 1}
             />
         )
     })
