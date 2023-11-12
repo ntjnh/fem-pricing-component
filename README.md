@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [frontendmentor.io](https://www.frontendmentor.io/solutions/toggling-pricing-component-4OSVBGVlw_)
-- Live Site URL: [ntjnh-fem-pricing-component.netlify.app](https://ntjnh-fem-pricing-component.netlify.app/)
+- Live Site URL: [ntjnh-pricing-component.netlify.app](https://ntjnh-pricing-component.netlify.app/)
 
 ## My process
 
